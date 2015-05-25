@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Work\Carnival\GusacCarnival4.0\MenuHelpDesk\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
+        <dex dex="D:\Work\Carnival\GusacCarnival4.0\MenuHelpDesk\app\build\intermediates\pre-dexed\debug\classes-86af93d8d7d2037fb79ba8abc68669bc9e5bad18.jar" />
+    </item>
+    <item
+        jar="D:\Work\Carnival\GusacCarnival4.0\MenuHelpDesk\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\libs\internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="D:\Work\Carnival\GusacCarnival4.0\MenuHelpDesk\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-fe8831f31f3d288969942e0b7e5e782917fe99ef.jar" />
+    </item>
+    <item
+        jar="D:\Android Studio\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.2\support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="D:\Work\Carnival\GusacCarnival4.0\MenuHelpDesk\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-b270314f3aa53c7dfbd2b9259d7bfba0f0168752.jar" />
+    </item>
+    <item
+        jar="D:\Work\Carnival\GusacCarnival4.0\MenuHelpDesk\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.2\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="D:\Work\Carnival\GusacCarnival4.0\MenuHelpDesk\app\build\intermediates\pre-dexed\debug\classes-1ec252905fde60d03afa10fbd79d087fe0069afc.jar" />
+    </item>
+
+</items>

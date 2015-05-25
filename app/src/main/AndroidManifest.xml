@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hpcoe.com.menuhelpdesk" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".SignIn"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".SignIn" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hpcoe.com.menuhelpdesk.SignIn" />
+        </activity>
+        <activity
+            android:name=".Modules_Activity"
+            android:label="@string/title_activity_modules_"
+            android:parentActivityName=".SignIn" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hpcoe.com.menuhelpdesk.SignIn" />
+        </activity>
+    </application>
+
+</manifest>
