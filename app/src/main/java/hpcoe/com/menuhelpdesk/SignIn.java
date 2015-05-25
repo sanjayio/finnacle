@@ -38,7 +38,7 @@ import hpcoe.com.menuhelpdesk.utils.CryptIt;
 public class SignIn extends ActionBarActivity {
 
     EditText mUserName, mUserpwd;
-    Button mBtnSignIn, mBtnRegister;
+    Button mSearchBtn, mBtnSignIn, mBtnRegister;
     TextView mErrorMsg;
     SharedPreferences settings;
 
@@ -56,10 +56,19 @@ public class SignIn extends ActionBarActivity {
         mUserName = (EditText) findViewById(R.id.user_name);
         mUserpwd = (EditText) findViewById(R.id.user_password);
         mBtnSignIn = (Button) findViewById(R.id.btn_sign_in);
+        mSearchBtn = (Button) findViewById(R.id.button_search_signin);
         mBtnRegister = (Button) findViewById(R.id.btn_register);
         mErrorMsg = (TextView) findViewById(R.id.errorMessage);
 
         mBtnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(v.getContext(), Register.class);
+                startActivity(myIntent);
+            }
+        });
+
+        mSearchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(v.getContext(), Modules_Activity.class);
