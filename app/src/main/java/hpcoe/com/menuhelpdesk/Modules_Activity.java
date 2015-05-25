@@ -10,22 +10,48 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 
 public class Modules_Activity extends ActionBarActivity {
 
     SharedPreferences settings;
+    List<Map<String, String>> modulesList = new ArrayList<Map<String, String>>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modules);
         settings=getSharedPreferences("loginPrefs", Context.MODE_PRIVATE);
 
+        initList();
+
         Toolbar toolbar= (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
+        ListView lv = (ListView) findViewById(R.id.modules_list);
 
+        SimpleAdapter simpleAdapter = new SimpleAdapter(this, modulesList, android.R.layout.simple_list_item_1, new String[] {"ABCD"}, new int[] {android.R.id.text1});
+        lv.setAdapter(simpleAdapter);
     }
 
+    private void initList() {
+        modulesList.add(createModule("ABCD", "abcd"));
+        modulesList.add(createModule("ABCD", "efgh"));
+        modulesList.add(createModule("ABCD", "ijkl"));
+        modulesList.add(createModule("ABCD", "mnop"));
+        modulesList.add(createModule("ABCD", "qrst"));
+    }
+
+    private HashMap<String, String> createModule(String key, String val) {
+        HashMap<String, String> module = new HashMap<String, String>();
+        module.put(key, val);
+        return module;
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -62,7 +62,7 @@ public class SignIn extends ActionBarActivity {
         mBtnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(v.getContext(), Register.class);
+                Intent myIntent = new Intent(v.getContext(), Modules_Activity.class);
                 startActivity(myIntent);
             }
         });

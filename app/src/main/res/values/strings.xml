@@ -9,7 +9,7 @@
           and password</string>
     <string name="register">Register</string>
     <string name="title_activity_register">Register</string>
-    <string name="title_activity_modules_">Modules</string>
+    <string name="title_activity_modules_">Select a module</string>
     <string name="action_logout">Logout</string>
 
 </resources>

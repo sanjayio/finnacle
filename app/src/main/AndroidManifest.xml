@@ -30,7 +30,7 @@
         </activity>
         <activity
             android:name=".Modules_Activity"
-            android:label="@string/title_activity_modules_"
+            android:label="Modules"
             android:parentActivityName=".SignIn" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
