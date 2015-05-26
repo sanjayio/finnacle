@@ -4,29 +4,4 @@
     android:layout_height="match_parent"
     tools:context="hpcoe.com.menuhelpdesk.Modules_Activity">
 
-    <ListView
-        android:id="@+id/modules_list"
-        layout="@layout/activity_modules"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="130dp"
-        android:minHeight="50dp"
-        android:background="@android:drawable/zoom_plate"
-        android:padding="30dp"></ListView>
-
-    <include
-        android:id="@+id/app_bar"
-        layout="@layout/appbar"
-        android:layout="@layout/activity_modules"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/searchedt"
-        android:layout_below="@+id/app_bar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp" />
-
 </RelativeLayout>

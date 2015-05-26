@@ -36,6 +36,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="hpcoe.com.menuhelpdesk.SignIn" />
         </activity>
+        <activity
+            android:name=".Menu_Options"
+            android:label="Modules"
+            android:parentActivityName=".SignIn" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="hpcoe.com.menuhelpdesk.SignIn" />
+        </activity>
     </application>
 
 </manifest>
