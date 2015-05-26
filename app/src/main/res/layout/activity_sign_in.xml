@@ -113,4 +113,13 @@
         android:layout_below="@+id/scrollView"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="modules"
+        android:id="@+id/modulesbutton"
+        android:layout_alignBottom="@+id/button_search_signin"
+        android:layout_toRightOf="@+id/button_search_signin"
+        android:layout_toEndOf="@+id/button_search_signin" />
+
 </RelativeLayout>
