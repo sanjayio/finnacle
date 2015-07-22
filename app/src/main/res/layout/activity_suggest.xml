@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="128dp"
+                android:background="@color/primary"
+                android:paddingBottom="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Feedback"
+                    android:textSize="24sp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#eee"
+                    android:layout_marginTop="70dp"
+                    android:id="@+id/suggest_title"
+                    android:layout_gravity="center_horizontal" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="128dp"
+                android:background="#88cecece" />
+
+            <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/accent"
+                android:id="@+id/edit_button"
+                app:fab_icon="@drawable/ic_done_white_36dp"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="92dp"
+                />
+
+        </RelativeLayout>
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:background="#eeeeee"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Category"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            style="@style/Base.Widget.AppCompat.Spinner"
+            android:spinnerMode="dialog"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginBottom="10dp"
+            android:entries="@array/spinner" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#88cecece" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Subject"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/edit_subject"
+            android:layout_gravity="center_horizontal"
+            style="@style/Base.Widget.AppCompat.EditText"
+            android:layout_marginBottom="10dp"
+            android:gravity="top|left"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#88cecece" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Description"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            style="@style/Base.Widget.AppCompat.EditText"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:id="@+id/edit_desc" />
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

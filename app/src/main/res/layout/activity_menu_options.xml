@@ -1,18 +1,20 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="hpcoe.com.menuhelpdesk.Modules_Activity">
+    android:orientation="vertical"
+    tools:context="hpcoe.com.menuhelpdesk.Modules">
 
-    <ListView
-        android:id="@+id/modules_list"
-        layout="@layout/activity_modules"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="130dp"
-        android:minHeight="50dp"
-        android:background="@android:color/holo_orange_light"
-        android:padding="30dp"></ListView>
+    <!--<ListView-->
+        <!--android:id="@+id/modules_list"-->
+        <!--layout="@layout/activity_modules"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="130dp"-->
+        <!--android:minHeight="50dp"-->
+        <!--android:background="@android:color/background_light"-->
+        <!--android:padding="30dp"></ListView>-->
+
 
     <include
         android:id="@+id/app_bar"
@@ -21,12 +23,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <EditText
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/searchedt"
-        android:layout_below="@+id/app_bar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp" />
+        android:layout_height="match_parent"/>
 
-</RelativeLayout>
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/searchedt"-->
+        <!--android:layout_below="@+id/app_bar"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="25dp" />-->
+
+</LinearLayout>

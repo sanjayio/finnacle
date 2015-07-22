@@ -1,17 +1,30 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="hpcoe.com.menuhelpdesk.Modules_Activity">
+    tools:context="hpcoe.com.menuhelpdesk.Modules">
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
-
+        android:id="@+id/action_search"
+        android:orderInCategory="200"
+        android:icon="@drawable/ic_search_white_36dp"
+        android:title="@string/action_search"
+        app:showAsAction="always" />
     <item
         android:title="@string/action_logout"
         android:id="@+id/action_logout"
         android:orderInCategory="500"
+        app:showAsAction="never"
+        />
+    <item
+        android:title="@string/action_suggest"
+        android:id="@+id/action_suggest"
+        android:orderInCategory="400"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:title="@string/action_settings"
+        android:id="@+id/action_settings"
+        android:orderInCategory="300"
         app:showAsAction="never"
         />
 </menu>

@@ -1,125 +1,144 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignIn">
 
-    <include
-        android:id="@+id/app_bar"
-        layout="@layout/appbar"
+    <FrameLayout
+        android:id="@+id/toolbarfl"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
 
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin"
-
-        android:layout_below="@id/app_bar"
-        android:scrollbars="vertical"
-        android:id="@+id/scrollView">
-
-        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/appbar"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/toolbarfl"
+        android:gravity="center"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/linLayout"
+            android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            tools:context=".Welcome">
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="@string/sign_in"-->
+                <!--android:textSize="35sp" />-->
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sign_in" />
+                android:text="User name"
+                android:textSize="16sp" />
 
-
-            <LinearLayout
+            <EditText
+                android:id="@+id/user_name"
                 android:layout_width="match_parent"
+                style="@style/Base.Widget.AppCompat.EditText"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="User name" />
-
-                <EditText
-                    android:id="@+id/user_name"
-                    android:inputType="text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                     />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Password" />
-
-                <EditText
-                    android:id="@+id/user_password"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPassword" />
-
-                <Button
-                    android:id="@+id/btn_sign_in"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="100dp"
-                    android:layout_marginStart="100dp"
-                    android:text="@string/sign_in"/>
-
-                <TextView
-                    android:id="@+id/errorMessage"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/emptyField"
-                    android:textColor="#d9ff1a11"
-                    android:visibility="invisible" />
-
-            </LinearLayout>
+                android:inputType="text" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/user_password"
+                android:layout_width="match_parent"
+                style="@style/Base.Widget.AppCompat.EditText"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/sign_in" />
+
+            <TextView
+                android:id="@+id/errorMessage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/register" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp">
-
-                <Button
-                    android:id="@+id/btn_register"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="100dp"
-                    android:text="Register"/>
-
-            </LinearLayout>
-
+                android:text="@string/emptyField"
+                android:textColor="#d9ff1a11"
+                android:visibility="invisible" />
 
         </LinearLayout>
-    </ScrollView>
+    </RelativeLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Search"
-        android:id="@+id/button_search_signin"
-        android:layout_below="@+id/scrollView"
-        android:layout_centerHorizontal="true" />
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="modules"
-        android:id="@+id/modulesbutton"
-        android:layout_alignBottom="@+id/button_search_signin"
-        android:layout_toRightOf="@+id/button_search_signin"
-        android:layout_toEndOf="@+id/button_search_signin" />
+        </FrameLayout>
+
+        <net.i2p.android.ext.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="bottom|end"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            fab:fab_addButtonColorNormal="@color/red"
+            fab:fab_addButtonColorPressed="@color/red"
+            fab:fab_addButtonSize="normal"
+            fab:fab_labelStyle="@style/menu_labels_style"
+            fab:fab_labelsPosition="left">
+
+            <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_changepwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/green"
+                fab:fab_colorPressed="@color/green"
+                fab:fab_icon="@drawable/changepassword"
+                fab:fab_size="mini"
+                fab:fab_title="Change Password" />
+
+            <!-- To remove the register functionality, comment the below block of code from here...-->
+
+            <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/red"
+                fab:fab_colorPressed="@color/red"
+                fab:fab_icon="@drawable/register"
+                fab:fab_size="mini"
+                fab:fab_title="Register" />
+
+            <!-- till here. This will remove the register button.-->
+
+        </net.i2p.android.ext.floatingactionbutton.FloatingActionsMenu>
+
+
+
 
 </RelativeLayout>

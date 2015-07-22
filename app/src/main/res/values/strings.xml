@@ -4,12 +4,28 @@
     <string name="app_name">Menu Help Desk</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_suggest">Suggestion</string>
     <string name="sign_in">Sign In</string>
     <string name="emptyField">One of the fields is left empty. Please enter both username
           and password</string>
     <string name="register">Register</string>
     <string name="title_activity_register">Register</string>
-    <string name="title_activity_modules_">Select a module</string>
+    <string name="title_activity_modules_">Modules</string>
     <string name="action_logout">Logout</string>
+    <string name="title_activity_change_password">Change Password</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_sub_modules">SubModules</string>
+    <string name="title_activity_menu_options">Menu Options</string>
+    <string name="action_search">Search</string>
+    <string name="title_activity_long_description">Description</string>
+    <string name="title_activity_description">Description</string>
+    <string-array name="spinner">
+        <item>Modules</item>
+        <item>Sub Modules</item>
+        <item>Menu Options</item>
+        <item>Description</item>
+        <item>Account Management</item>
+        <item>Other</item>
+    </string-array>
 
 </resources>

@@ -2,32 +2,60 @@
 <items version="2" >
 
     <item
-        jar="/home/sanjay/Documents/finnacle/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/classes.jar"
+        jar="E:\HP\MenuHelpDesk\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="E:\HP\MenuHelpDesk\app\build\intermediates\pre-dexed\debug\classes-ea8cf3f24a9ed50fd1031042f41e539cba5da677.jar" />
+    </item>
+    <item
+        jar="C:\Users\sanjay kumar\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="E:\HP\MenuHelpDesk\app\build\intermediates\pre-dexed\debug\library-2.4.0-d0d68a7b04fc47ca973fe128d38c80701a895e2f.jar" />
+    </item>
+    <item
+        jar="E:\HP\MenuHelpDesk\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="E:\HP\MenuHelpDesk\app\build\intermediates\pre-dexed\debug\classes-50cccce4d397d26fd36dfd7d6fda4a082996de3a.jar" />
+    </item>
+    <item
+        jar="E:\HP\MenuHelpDesk\app\build\intermediates\exploded-aar\net.i2p.android.ext\floatingactionbutton\1.9.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7c5e4db194c6ec3e62b70759ef913381ea4903d1">
+        <dex dex="E:\HP\MenuHelpDesk\app\build\intermediates\pre-dexed\debug\classes-ffca7e18353ad7fc0eaa21a55ad238100e56d2eb.jar" />
+    </item>
+    <item
+        jar="E:\HP\MenuHelpDesk\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.1.1\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e0b0c35d02308b270015a74cada4887e2e49b889">
+        <dex dex="E:\HP\MenuHelpDesk\app\build\intermediates\pre-dexed\debug\classes-d0fad713f8bbceb873c60a3eff9c3ba8e78ce784.jar" />
+    </item>
+    <item
+        jar="C:\Users\sanjay kumar\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="E:\HP\MenuHelpDesk\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-34e11080dd30670f2d4e459b32a2a7d0fc4e9893.jar" />
+    </item>
+    <item
+        jar="E:\HP\MenuHelpDesk\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.2\classes.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
-        <dex dex="/home/sanjay/Documents/finnacle/app/build/intermediates/pre-dexed/debug/classes-0cf20f53c82b01290d5c3dd1361e514fc00f7714.jar" />
+        <dex dex="E:\HP\MenuHelpDesk\app\build\intermediates\pre-dexed\debug\classes-1eee091dff4f9e087922fe8eb7da93170b6726f7.jar" />
     </item>
     <item
-        jar="/home/sanjay/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
+        jar="E:\HP\MenuHelpDesk\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\libs\internal_impl-22.1.1.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
-        <dex dex="/home/sanjay/Documents/finnacle/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-737de29a6e8ca13016e7fdbbb501a100a1889162.jar" />
-    </item>
-    <item
-        jar="/home/sanjay/Documents/finnacle/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
-        <dex dex="/home/sanjay/Documents/finnacle/app/build/intermediates/pre-dexed/debug/classes-50b93abec74409921523aa98ec0c18a662f33e04.jar" />
-    </item>
-    <item
-        jar="/home/sanjay/Documents/finnacle/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
-        jumboMode="false"
-        revision="21.1.2"
-        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
-        <dex dex="/home/sanjay/Documents/finnacle/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-35bfaa7f9d9ad953fcf9600dd73571293d42b9be.jar" />
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="E:\HP\MenuHelpDesk\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-8b7330e8cb3c5b0498028a04fc84121f733854e1.jar" />
     </item>
 
 </items>

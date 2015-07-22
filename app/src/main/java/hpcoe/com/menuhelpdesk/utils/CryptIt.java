@@ -6,13 +6,22 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
- * Created by Messi10 on 21-May-15.
+ * Created by Abhijith Gururaj and Sanjay Kumar.
+ *
+ * This is a helper class to implement encryption and decryption.
+ * This uses AES encryption/decryption using a 128-bit key.
  */
 public class CryptIt {
     private static final String ALGORITHM = "AES";
-    private static final byte[] keyValue = "eoCisFpHisFpHeoCeoCisFpHisFpHeoC".getBytes();
+    private static final byte[] keyValue = "eoCisFpHisFpHeoC".getBytes();
     static Key key;
 
+    /**
+     * Method for encrypting data.
+     * @param valueToEnc : Data to be encrypted in String
+     * @return : An encrypted String containing the data.
+     * @throws Exception
+     */
     public static String encrypt(String valueToEnc) throws Exception {
         System.out.println((new String(keyValue)).length());
         key = generateKey();
@@ -29,6 +38,12 @@ public class CryptIt {
         return encryptedValue;
     }
 
+    /**
+     * Method for decrypting data.
+     * @param encryptedValue : Encrypted data in String
+     * @return : Decrypted data in String
+     * @throws Exception
+     */
     public static String decrypt(String encryptedValue) throws Exception {
         Cipher c = Cipher.getInstance(ALGORITHM);
         c.init(Cipher.DECRYPT_MODE, key);
@@ -37,8 +52,12 @@ public class CryptIt {
         return new String(decryptedVal);
     }
 
+    /**
+     * Generates a key using the specified 128-bit byte array.
+     * @return : Key
+     * @throws Exception
+     */
     private static Key generateKey() throws Exception {
-        Key key = new SecretKeySpec(keyValue, ALGORITHM);
-        return key;
+        return new SecretKeySpec(keyValue, ALGORITHM);
     }
 }
